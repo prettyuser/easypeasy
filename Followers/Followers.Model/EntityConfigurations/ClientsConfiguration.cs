@@ -1,5 +1,4 @@
 using Followers.Model.Clients.Db.Entities;
-using Mapster;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -9,8 +8,8 @@ namespace Followers.Model.EntityConfigurations
     {
         public void Configure(EntityTypeBuilder<EfClient> entity)
         {
-            entity.ToTable("Clients", "dbo");
-            
+            entity.ToTable("Clients");
+
             entity.HasKey(e => e.Id);
 
             entity.Property(e => e.Name)
@@ -21,9 +20,12 @@ namespace Followers.Model.EntityConfigurations
                 .IsRequired()
                 .HasDefaultValue(1);
 
-            entity
-                .HasMany(p => p.Followers)
-                .WithMany(p => p.Followings);
+            entity.HasIndex(e => e.Id)
+                .IsUnique();
+
+            entity.HasIndex(e => e.Name);
+            
+            entity.HasCheckConstraint("CK_Clients_Id", "[Id] > 0");
         }
     }
 }

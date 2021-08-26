@@ -1,0 +1,12 @@
+C:\repo\easypeasy\Followers\Followers.Utilities\bin\Debug\net5.0\Followers.Utilities.deps.json
+C:\repo\easypeasy\Followers\Followers.Utilities\bin\Debug\net5.0\Followers.Utilities.dll
+C:\repo\easypeasy\Followers\Followers.Utilities\bin\Debug\net5.0\ref\Followers.Utilities.dll
+C:\repo\easypeasy\Followers\Followers.Utilities\bin\Debug\net5.0\Followers.Utilities.pdb
+C:\repo\easypeasy\Followers\Followers.Utilities\obj\Debug\net5.0\Followers.Utilities.csproj.AssemblyReference.cache
+C:\repo\easypeasy\Followers\Followers.Utilities\obj\Debug\net5.0\Followers.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\easypeasy\Followers\Followers.Utilities\obj\Debug\net5.0\Followers.Utilities.AssemblyInfoInputs.cache
+C:\repo\easypeasy\Followers\Followers.Utilities\obj\Debug\net5.0\Followers.Utilities.AssemblyInfo.cs
+C:\repo\easypeasy\Followers\Followers.Utilities\obj\Debug\net5.0\Followers.Utilities.csproj.CoreCompileInputs.cache
+C:\repo\easypeasy\Followers\Followers.Utilities\obj\Debug\net5.0\Followers.Utilities.dll
+C:\repo\easypeasy\Followers\Followers.Utilities\obj\Debug\net5.0\ref\Followers.Utilities.dll
+C:\repo\easypeasy\Followers\Followers.Utilities\obj\Debug\net5.0\Followers.Utilities.pdb

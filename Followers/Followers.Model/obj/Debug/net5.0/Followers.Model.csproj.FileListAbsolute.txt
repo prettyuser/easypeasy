@@ -2,8 +2,6 @@ C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Model.dep
 C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Model.dll
 C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\ref\Followers.Model.dll
 C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Model.pdb
-C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Utilities.dll
-C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Utilities.pdb
 C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.csproj.AssemblyReference.cache
 C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.GeneratedMSBuildEditorConfig.editorconfig
 C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.AssemblyInfoInputs.cache
@@ -16,3 +14,5 @@ C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.pdb
 C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Model.runtimeconfig.json
 C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Model.runtimeconfig.dev.json
 C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.genruntimeconfig.cache
+C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Utilities.dll
+C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Utilities.pdb

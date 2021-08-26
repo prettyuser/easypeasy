@@ -16,26 +16,11 @@ namespace Followers.Model.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.9");
 
-            modelBuilder.Entity("EfClientEfClient", b =>
+            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfClient", b =>
                 {
-                    b.Property<Guid>("FollowersId")
-                        .HasColumnType("TEXT");
-
-                    b.Property<Guid>("FollowingsId")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("FollowersId", "FollowingsId");
-
-                    b.HasIndex("FollowingsId");
-
-                    b.ToTable("EfClientEfClient");
-                });
-
-            modelBuilder.Entity("Followers.Api.Model.Clients.Db.Entities.EfClient", b =>
-                {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("INTEGER");
 
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
@@ -52,22 +37,61 @@ namespace Followers.Model.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clients", "dbo");
+                    b.HasIndex("Id")
+                        .IsUnique();
+
+                    b.HasIndex("Name");
+
+                    b.ToTable("Clients");
+
+                    b.HasCheckConstraint("CK_Clients_Id", "[Id] > 0");
                 });
 
-            modelBuilder.Entity("EfClientEfClient", b =>
+            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfFollower", b =>
                 {
-                    b.HasOne("Followers.Api.Model.Clients.Db.Entities.EfClient", null)
-                        .WithMany()
-                        .HasForeignKey("FollowersId")
+                    b.Property<int>("FollowerId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("FollowingId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("FollowerId", "FollowingId");
+
+                    b.HasIndex("FollowingId");
+
+                    b.ToTable("Followers");
+
+                    b.HasCheckConstraint("CK_Followers", "[FollowerId] <> [FollowingId]");
+
+                    b.HasCheckConstraint("CK_Followers_FollowerId", "[FollowerId] > 0");
+
+                    b.HasCheckConstraint("CK_Followers_FollowingId", "[FollowingId] > 0");
+                });
+
+            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfFollower", b =>
+                {
+                    b.HasOne("Followers.Model.Clients.Db.Entities.EfClient", "Follower")
+                        .WithMany("Followers")
+                        .HasForeignKey("FollowerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Followers.Api.Model.Clients.Db.Entities.EfClient", null)
-                        .WithMany()
-                        .HasForeignKey("FollowingsId")
+                    b.HasOne("Followers.Model.Clients.Db.Entities.EfClient", "Following")
+                        .WithMany("Followings")
+                        .HasForeignKey("FollowingId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Follower");
+
+                    b.Navigation("Following");
+                });
+
+            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfClient", b =>
+                {
+                    b.Navigation("Followers");
+
+                    b.Navigation("Followings");
                 });
 #pragma warning restore 612, 618
         }

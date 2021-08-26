@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Followers.Model.Clients.Db.Entities
 {
@@ -10,10 +11,12 @@ namespace Followers.Model.Clients.Db.Entities
     /// <param name="Name">Client's name</param>
     /// <param name="Rank">Client's rank</param>
     /// <param name="IsActive">Is client deleted?</param>
-    public record EfClient(Guid Id, string Name, int? Rank, bool IsActive)
+    public record EfClient(int Id, string Name, int? Rank, bool IsActive)
     {
-        public virtual ICollection<EfClient> Followings { get; set; }
+        [InverseProperty("Following")]
+        public virtual ICollection<EfFollower> Followings { get; set; }
         
-        public virtual ICollection<EfClient> Followers { get; set; }
+        [InverseProperty("Follower")]
+        public virtual ICollection<EfFollower> Followers { get; set; }
     }
 }

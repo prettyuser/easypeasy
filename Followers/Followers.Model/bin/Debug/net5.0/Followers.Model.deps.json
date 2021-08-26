@@ -8,12 +8,12 @@
     ".NETCoreApp,Version=v5.0": {
       "Followers.Model/1.0.0": {
         "dependencies": {
+          "Followers.Utilities": "1.0.0",
           "Mapster": "7.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.Design": "5.0.9",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.9",
-          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.9",
-          "Utilities": "1.0.0"
+          "Microsoft.EntityFrameworkCore.Sqlite": "5.0.9"
         },
         "runtime": {
           "Followers.Model.dll": {}
@@ -436,13 +436,13 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Utilities/1.0.0": {
+      "Followers.Utilities/1.0.0": {
         "dependencies": {
           "MediatR": "9.0.0",
           "Microsoft.Extensions.Logging": "5.0.0"
         },
         "runtime": {
-          "Utilities.dll": {}
+          "Followers.Utilities.dll": {}
         }
       }
     }
@@ -747,7 +747,7 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "Utilities/1.0.0": {
+    "Followers.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
