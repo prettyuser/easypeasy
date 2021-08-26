@@ -13,3 +13,6 @@ C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.csp
 C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.dll
 C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\ref\Followers.Model.dll
 C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.pdb
+C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Model.runtimeconfig.json
+C:\repo\easypeasy\Followers\Followers.Model\bin\Debug\net5.0\Followers.Model.runtimeconfig.dev.json
+C:\repo\easypeasy\Followers\Followers.Model\obj\Debug\net5.0\Followers.Model.genruntimeconfig.cache

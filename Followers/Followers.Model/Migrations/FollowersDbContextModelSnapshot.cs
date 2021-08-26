@@ -31,7 +31,7 @@ namespace Followers.Model.Migrations
                     b.ToTable("EfClientEfClient");
                 });
 
-            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfClient", b =>
+            modelBuilder.Entity("Followers.Api.Model.Clients.Db.Entities.EfClient", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -40,7 +40,7 @@ namespace Followers.Model.Migrations
                     b.Property<bool>("IsActive")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER")
-                        .HasDefaultValueSql("((1))");
+                        .HasDefaultValue(true);
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -57,13 +57,13 @@ namespace Followers.Model.Migrations
 
             modelBuilder.Entity("EfClientEfClient", b =>
                 {
-                    b.HasOne("Followers.Model.Clients.Db.Entities.EfClient", null)
+                    b.HasOne("Followers.Api.Model.Clients.Db.Entities.EfClient", null)
                         .WithMany()
                         .HasForeignKey("FollowersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Followers.Model.Clients.Db.Entities.EfClient", null)
+                    b.HasOne("Followers.Api.Model.Clients.Db.Entities.EfClient", null)
                         .WithMany()
                         .HasForeignKey("FollowingsId")
                         .OnDelete(DeleteBehavior.Cascade)

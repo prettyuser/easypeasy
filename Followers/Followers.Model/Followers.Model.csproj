@@ -7,15 +7,20 @@
     <ItemGroup>
       <Folder Include="Base" />
       <Folder Include="Clients\Domain" />
+      <Folder Include="Migrations" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Utilities\Utilities.csproj" />
+      <ProjectReference Include="..\Followers.Utilities\Followers.Utilities.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Mapster" Version="7.2.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.9">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.9" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.9" />
     </ItemGroup>

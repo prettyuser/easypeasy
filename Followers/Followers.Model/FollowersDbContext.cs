@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Followers.Model
 {
-    public class FollowersDbContext : DbContext
+    public class FollowersDbContext : DbContext, IFollowersDbContext
     {
-        public DbSet<EfClient> Clients { get; }
+        public DbSet<EfClient> Clients { get; set; }
 
         private string DbPath { get; set; }
 

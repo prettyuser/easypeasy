@@ -3,8 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Followers.Model
 {
-    public class IFollowersDbContext
+    public interface IFollowersDbContext
     {
-        public DbSet<EfClient> Clients { get; }
+        public DbSet<EfClient> Clients { get; set; }
     }
 }

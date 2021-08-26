@@ -18,11 +18,12 @@ namespace Followers.Model.Clients.Handlers
         
         protected override async Task<IEnumerable<ClientData>> GetData()
         {
-            return (await 
-                _followersDbContext
-                .Clients
-                .ToListAsync())
-                .Adapt<IEnumerable<ClientData>>();
+            var result = await _followersDbContext.Clients
+                .Include(p => p.Followers)
+                .Include(p => p.Followings)
+                .ToListAsync();
+            
+            return result.Adapt<List<ClientData>>();
         }
     }
 }

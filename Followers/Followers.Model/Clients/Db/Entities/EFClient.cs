@@ -12,8 +12,8 @@ namespace Followers.Model.Clients.Db.Entities
     /// <param name="IsActive">Is client deleted?</param>
     public record EfClient(Guid Id, string Name, int? Rank, bool IsActive)
     {
-        public virtual ICollection<EfClient> Followings { get; set; } = new HashSet<EfClient>();
+        public virtual ICollection<EfClient> Followings { get; set; }
         
-        public virtual ICollection<EfClient> Followers { get; set; } = new HashSet<EfClient>();
+        public virtual ICollection<EfClient> Followers { get; set; }
     }
 }

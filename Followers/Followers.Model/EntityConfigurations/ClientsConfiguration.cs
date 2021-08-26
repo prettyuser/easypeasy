@@ -1,4 +1,5 @@
 using Followers.Model.Clients.Db.Entities;
+using Mapster;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -16,12 +17,13 @@ namespace Followers.Model.EntityConfigurations
                 .IsRequired()
                 .HasMaxLength(64);
 
-            entity.Property(e => e.IsActive)
+            entity.Property(p => p.IsActive)
                 .IsRequired()
-                .HasDefaultValueSql("((1))");
+                .HasDefaultValue(1);
 
-            entity.HasMany(p => p.Followers)
-                .WithMany(c => c.Followings);
+            entity
+                .HasMany(p => p.Followers)
+                .WithMany(p => p.Followings);
         }
     }
 }
