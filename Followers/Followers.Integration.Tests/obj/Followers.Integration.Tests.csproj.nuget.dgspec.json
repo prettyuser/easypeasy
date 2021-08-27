@@ -1,29 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repo\\easypeasy\\Followers\\Followers.Integration.Tests\\Followers.Integration.Tests.csproj": {}
+    "C:\\easypeasy\\Followers\\Followers.Integration.Tests\\Followers.Integration.Tests.csproj": {}
   },
   "projects": {
-    "C:\\repo\\easypeasy\\Followers\\Followers.Integration.Tests\\Followers.Integration.Tests.csproj": {
+    "C:\\easypeasy\\Followers\\Followers.Integration.Tests\\Followers.Integration.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repo\\easypeasy\\Followers\\Followers.Integration.Tests\\Followers.Integration.Tests.csproj",
+        "projectUniqueName": "C:\\easypeasy\\Followers\\Followers.Integration.Tests\\Followers.Integration.Tests.csproj",
         "projectName": "Followers.Integration.Tests",
-        "projectPath": "C:\\repo\\easypeasy\\Followers\\Followers.Integration.Tests\\Followers.Integration.Tests.csproj",
-        "packagesPath": "C:\\Users\\boris\\.nuget\\packages\\",
-        "outputPath": "C:\\repo\\easypeasy\\Followers\\Followers.Integration.Tests\\obj\\",
+        "projectPath": "C:\\easypeasy\\Followers\\Followers.Integration.Tests\\Followers.Integration.Tests.csproj",
+        "packagesPath": "C:\\Users\\Boris\\.nuget\\packages\\",
+        "outputPath": "C:\\easypeasy\\Followers\\Followers.Integration.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\boris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Boris\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.telerik.com/nuget": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -77,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\Boris\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
