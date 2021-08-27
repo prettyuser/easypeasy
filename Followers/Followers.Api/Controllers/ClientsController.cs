@@ -26,12 +26,20 @@ namespace Followers.Controllers
             return await Mediator.Send(query);
         }
         
-        [HttpPatch]
+        [HttpPost]
         [Route("[action]")]
-        public async Task<IEnumerable<ClientData>> Subscribe(int top = 0)
+        public async Task<SubscriberClientData> Subscribe(EditSubscriptionRequest request)
         {
-            var query = new RankedClientsQuery(top);
-            return await Mediator.Send(query);
+            var command = new SubscribeClientCommand(request);
+            return await Mediator.Send(command);
+        }
+        
+        [HttpPost]
+        [Route("[action]")]
+        public async Task<ClientData> Register(RegisterClientRequest request)
+        {
+            var command = new RegisterClientCommand(request);
+            return await Mediator.Send(command);
         }
     }
 }

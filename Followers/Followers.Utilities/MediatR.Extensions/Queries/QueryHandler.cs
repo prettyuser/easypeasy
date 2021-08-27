@@ -6,7 +6,7 @@ namespace Utilities.MediatR.Extensions.Queries
     public abstract class QueryHandler<TQuery, TResult> : HandlerBase<TQuery, TResult>
         where TQuery : IQuery<TResult>
     {
-        protected TQuery Query => Request;
+        private TQuery Query => Request;
         
         protected override async Task<TResult> Handle() => await GetData().ConfigureAwait(false);
         

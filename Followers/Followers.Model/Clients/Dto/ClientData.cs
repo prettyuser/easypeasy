@@ -7,5 +7,5 @@ namespace Followers.Model.Clients.Dto
     /// <param name="Name">Client's name</param>
     /// <param name="Followers">Followers quantity</param>
     /// <param name="IsActive">Is deleted></param>
-    public record ClientData(int Id, string Name, int Followers, bool IsActive);
+    public record ClientData(int Id, string Name, int? Followers = null, bool? IsActive = null);
 }

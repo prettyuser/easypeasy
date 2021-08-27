@@ -63,4 +63,3 @@ C:\repo\easypeasy\Followers\Followers.Api\obj\Debug\net5.0\Followers.Api.dll
 C:\repo\easypeasy\Followers\Followers.Api\obj\Debug\net5.0\ref\Followers.Api.dll
 C:\repo\easypeasy\Followers\Followers.Api\obj\Debug\net5.0\Followers.Api.pdb
 C:\repo\easypeasy\Followers\Followers.Api\obj\Debug\net5.0\Followers.Api.genruntimeconfig.cache
-C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Scrutor.dll

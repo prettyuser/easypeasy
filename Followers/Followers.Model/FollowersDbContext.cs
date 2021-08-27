@@ -19,7 +19,7 @@ namespace Followers.Model
             DbPath = $"{path}{System.IO.Path.DirectorySeparatorChar}followers.db";
         }
 
-        public new Task<int> SaveChanges() => SaveChangesAsync();
+        public Task<int> SaveDbChanges() => SaveChangesAsync();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

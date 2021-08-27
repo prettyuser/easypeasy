@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +18,6 @@ namespace Followers.Model.Clients
         {
             _followersDbContext = followersDbContext;
         }
-        public Task<int> Register()
-        {
-            return Task.FromResult(0);
-        }
 
         public async Task<List<EfClient>> GetClients(int top)
         {
@@ -30,6 +27,30 @@ namespace Followers.Model.Clients
                     .OrderByDescending(e => e.Subscribers.Count)
                     .Take(top)
                     .ToListAsync();
+        }
+
+        public async Task<EfClient> GetClient(int id)
+        {
+            return await _followersDbContext.Clients.FirstOrDefaultAsync(p => p.Id == id);
+        }
+
+        public async Task<int> SubscribeClient(int subscriberId, int subscribingId)
+        {
+            var entity = new EfSubscriber(subscriberId, subscribingId);
+            _followersDbContext.Followers.Add(entity);
+            return await _followersDbContext.SaveDbChanges();
+        }
+        
+        public async Task<ClientData> RegisterClient(string name)
+        {
+            var newEntity = new EfClient(0, name);
+            _followersDbContext.Clients.Add(newEntity);
+            await _followersDbContext.SaveDbChanges();
+
+            var entity = await GetClient(newEntity.Id); 
+            
+            var result = new ClientData(entity.Id, entity.Name);
+            return result;
         }
     }
 }

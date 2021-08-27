@@ -8,5 +8,9 @@ namespace Followers.Model.Clients
     public interface IClientsManager
     {
         Task<List<EfClient>> GetClients(int top);
+        
+        Task<int> SubscribeClient(int subscriberId, int subscribingId);
+
+        Task<ClientData> RegisterClient(string name);
     }
 }

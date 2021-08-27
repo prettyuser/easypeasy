@@ -8,5 +8,6 @@ namespace Followers.Model.Clients.Handlers
     /// Query to work with clients
     /// </summary>
     /// <param name="Top">Take first n elements</param>
-    public record RankedClientsQuery(int Top) : Query<IEnumerable<ClientData>>;
+    public record RankedClientsQuery(int Top) 
+        : Query<IEnumerable<ClientData>>;
 }

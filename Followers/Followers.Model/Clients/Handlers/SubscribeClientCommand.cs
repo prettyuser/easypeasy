@@ -3,5 +3,6 @@ using Utilities.MediatR.Extensions.Commands;
 
 namespace Followers.Model.Clients.Handlers
 {
-    public record SubscribeClientCommand(int FollowingId, int FollowerId) : Command<SubscriberClientData>;
+    public record SubscribeClientCommand(EditSubscriptionRequest EditSubscriptionRequest) 
+        : Command<SubscriberClientData>;
 }
