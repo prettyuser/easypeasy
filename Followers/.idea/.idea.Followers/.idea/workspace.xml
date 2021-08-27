@@ -5,36 +5,148 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="241715e2-456d-4823-9908-18a06b8daab5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfFollower.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/FollowersConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Followers.Model/Clients/Dto/SubscriberClientData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/SubscribersConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Followers.Model/MappingConfigs/FollowersMapping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/Command.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/CommandHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/ICommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Controllers/ClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Controllers/ClientsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Followers.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Followers.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Api.runtimeconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Model.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Utilities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Followers.Utilities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Microsoft.AspNetCore.OData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Microsoft.OData.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Microsoft.OData.Edm.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Microsoft.Spatial.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/ref/Followers.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/bin/Debug/net5.0/ref/Followers.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/Followers.Api.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/ref/Followers.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Debug/net5.0/ref/Followers.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Followers.Api.csproj.EntityFrameworkCore.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Followers.Api.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Followers.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Followers.Api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/Followers.Api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/Followers.Api.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/Followers.Integration.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/Followers.Integration.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/Followers.Integration.Tests.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/ref/Followers.Integration.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/bin/Debug/net5.0/ref/Followers.Integration.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/Followers.Integration.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/Followers.Integration.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/Followers.Integration.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/Followers.Integration.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/Followers.Integration.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/Followers.Integration.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/Followers.Integration.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/Followers.Integration.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/ref/Followers.Integration.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Debug/net5.0/ref/Followers.Integration.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Followers.Integration.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/Followers.Integration.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Integration.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Integration.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EFClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EFClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ClientsConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ClientsConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfSubscriber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Dto/ClientData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Dto/ClientData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/IClientsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/IClientsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/FollowersConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Followers.Model.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Followers.Model.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/FollowersDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/FollowersDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/IFollowersDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/IFollowersDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210825215032_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210825215032_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826144120_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826144120_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826170917_Migration01.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826170917_Migration01.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826172620_Migration02.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826172620_Migration02.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826175715_Migration03.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826175715_Migration03.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826180939_Migration04.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826180939_Migration04.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/FollowersDbContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Utilities.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Utilities.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Model.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Utilities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/Followers.Utilities.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/ref/Followers.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/bin/Debug/net5.0/ref/Followers.Model.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/Followers.Model.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/ref/Followers.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/Debug/net5.0/ref/Followers.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/obj/Followers.Model.csproj.EntityFrameworkCore.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/Followers.Model.csproj.EntityFrameworkCore.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/obj/Followers.Model.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/Followers.Model.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/Followers.Unit.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/Followers.Unit.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/Followers.Unit.Tests.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/ref/Followers.Unit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/bin/Debug/net5.0/ref/Followers.Unit.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Debug/net5.0/Followers.Unit.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Debug/net5.0/Followers.Unit.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Debug/net5.0/Followers.Unit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Debug/net5.0/Followers.Unit.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Debug/net5.0/Followers.Unit.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Debug/net5.0/Followers.Unit.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Debug/net5.0/ref/Followers.Unit.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Debug/net5.0/ref/Followers.Unit.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Followers.Unit.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/obj/Followers.Unit.Tests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Async/AsyncWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/Async/AsyncWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Async/TaskExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/Async/TaskExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Followers.Utilities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/Followers.Utilities.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/HandlerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/HandlerBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/IRequestBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/IRequestBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/IQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/IQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/QueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/QueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Reflection/CachedPocoTypeFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/Reflection/CachedPocoTypeFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Reflection/PocoTypeBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/Reflection/PocoTypeBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Reflection/ReflectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/Reflection/ReflectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/bin/Debug/net5.0/Followers.Utilities.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/bin/Debug/net5.0/Followers.Utilities.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Utilities/bin/Debug/net5.0/Followers.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/bin/Debug/net5.0/Followers.Utilities.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Utilities/bin/Debug/net5.0/Followers.Utilities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/bin/Debug/net5.0/Followers.Utilities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/bin/Debug/net5.0/ref/Followers.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/bin/Debug/net5.0/ref/Followers.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/Followers.Utilities.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/Followers.Utilities.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/Followers.Utilities.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/Followers.Utilities.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/Followers.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/Followers.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/Followers.Utilities.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/Followers.Utilities.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/ref/Followers.Utilities.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/Debug/net5.0/ref/Followers.Utilities.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/Followers.Utilities.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/Followers.Utilities.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,54 +166,42 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3834795B-F41B-4E62-8161-509ECA0F5822/97/85966b49/IRequestHandler`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/15F/CollectionNavigationBuilder`.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/176/KeyBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Followers.Api/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12F8289F-4024-4D71-9022-CB6EF860D1DB/38/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BDD96C5F-630A-4529-8DAC-C07D80DEB23B/A/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Followers.Unit.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/D2/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Followers.Integration.Tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MediatR.Extensions/Class1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B997CE4B-6217-41E6-875C-C78C527BE20D/46/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/27E/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Followers.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/164/EntityTypeBuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3834795B-F41B-4E62-8161-509ECA0F5822/49/69922294/IRequestHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D8C458E0-524A-445C-8893-8677F039F0A9/6/EndpointRoutingApplicationBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5BFD8D9A-6B3C-4231-A94A-A60A37A737BB/46/2958e781/TypeAdapter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A32884-3BDC-4762-AF89-C8FDC084C4D6/84/bdff87e5/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/38A61A39-DF4D-4A14-AABF-471F1F19074E/1f/08e15015/ODataEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/165/EntityTypeBuilder`.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A32884-3BDC-4762-AF89-C8FDC084C4D6/da/4e28433e/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C21A9621-256E-40DB-BF72-4986AF856144/104/CreateTableBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/12F8289F-4024-4D71-9022-CB6EF860D1DB/1C/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8F01B25D-9EFD-4718-A67B-1DF2A73140E5/58/79f4467a/HostEnvironmentEnvExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/15F/CollectionNavigationBuilder`.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/BDD96C5F-630A-4529-8DAC-C07D80DEB23B/A/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5BFD8D9A-6B3C-4231-A94A-A60A37A737BB/f0/1c68a8df/TypeAdapterConfig.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/D2/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MediatR.Extensions/Class1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/27E/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/E7BD73DA-3C64-40FB-B258-D36855A3F940/164/EntityTypeBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3834795B-F41B-4E62-8161-509ECA0F5822/49/69922294/IRequestHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5BFD8D9A-6B3C-4231-A94A-A60A37A737BB/46/2958e781/TypeAdapter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A32884-3BDC-4762-AF89-C8FDC084C4D6/da/4e28433e/Object.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Followers.Model/Class1.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/IClientsManager.cs" />
-      <option value="$PROJECT_DIR$/MediatR.Extensions/Class1.cs" />
-      <option value="$PROJECT_DIR$/Utilities/Class1.cs" />
-      <option value="$PROJECT_DIR$/Utilities/Db/QueryableDecorator.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/Db/EfClients.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfClients.cs" />
       <option value="$PROJECT_DIR$/Utilities/MediatR.Extensions/Commands/CommandHandler.cs" />
       <option value="$PROJECT_DIR$/Utilities/MediatR.Extensions/AsyncCommands/CommandTask.cs" />
       <option value="$PROJECT_DIR$/Utilities/MediatR.Extensions/AsyncCommands/AsyncCommandHandler.cs" />
       <option value="$PROJECT_DIR$/Utilities/MediatR.Extensions/Queries/Query.cs" />
       <option value="$PROJECT_DIR$/Utilities/MediatR.Extensions/Base/HandlerBase.cs" />
       <option value="$PROJECT_DIR$/Utilities/MediatR.Extensions/Queries/QueryHandler.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQuery.cs" />
       <option value="$PROJECT_DIR$/Followers/Controllers/ClientsController.cs" />
       <option value="$PROJECT_DIR$/Followers.Model/IDbContext.cs" />
       <option value="$PROJECT_DIR$/Followers.Model/DbContext.cs" />
       <option value="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfFollow.cs" />
       <option value="$PROJECT_DIR$/Utilities/DataModels/BaseEfEntity.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/Dto/ClientData.cs" />
       <option value="$PROJECT_DIR$/Followers/Properties/launchSettings.json" />
       <option value="$PROJECT_DIR$/UnitTests/UnitTest1.cs" />
       <option value="$PROJECT_DIR$/IntegrationTests/UnitTest1.cs" />
@@ -109,11 +209,39 @@
       <option value="$PROJECT_DIR$/Followers.Model/Migrations/20210825215032_Initial.cs" />
       <option value="$PROJECT_DIR$/Followers.Model/Migrations/20210826120313_Initial.cs" />
       <option value="$PROJECT_DIR$/Followers.Model/FollowersDbContext.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/IFollowersDbContext.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfClient.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfFollower.cs" />
-      <option value="$PROJECT_DIR$/Followers.Model/EntityConfigurations/FollowersConfiguration.cs" />
       <option value="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ClientsConfiguration.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/IFollowersDbContext.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQuery.cs" />
+      <option value="$PROJECT_DIR$/Followers.Api/Controllers/ClientsController.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/QueryHandler.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/Query.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/IQuery.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/IRequestBase.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/HandlerBase.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/Async/AsyncWrapper.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/Async/TaskExtensions.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/ICommand.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/Reflection/CachedPocoTypeFactory.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/Reflection/PocoTypeBuilder.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/Reflection/ReflectionExtensions.cs" />
+      <option value="$PROJECT_DIR$/Followers.Api/Program.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfFollower.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Dto/SubscribeClientData.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommand.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/Command.cs" />
+      <option value="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/CommandHandler.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommandHandler.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/EntityConfigurations/FollowersConfiguration.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/EntityConfigurations/SubscribersConfiguration.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfClient.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfSubscriber.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Dto/ClientData.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Dto/SubscriberClientData.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/MappingConfigs/FollowersMapping.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/IClientsManager.cs" />
+      <option value="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs" />
+      <option value="$PROJECT_DIR$/Followers.Api/Startup.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1x8o9LLGCP0mAmbnKORoS7Nefq3" />
@@ -183,7 +311,7 @@
       <workItem from="1629920991377" duration="349000" />
       <workItem from="1629921680701" duration="4315000" />
       <workItem from="1629977180377" duration="7032000" />
-      <workItem from="1629997509604" duration="2811000" />
+      <workItem from="1629997509604" duration="17022000" />
     </task>
     <servers />
   </component>
@@ -212,16 +340,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\repo\easypeasy\Followers\Followers.Model\Clients\Handlers\RankedClientsQueryHandler.cs" initialLine="19" containingFunctionPresentation="method 'GetData'">
+          <line>21</line>
+          <properties documentPath="C:\repo\easypeasy\Followers\Followers.Model\Clients\Handlers\RankedClientsQueryHandler.cs" initialLine="28" containingFunctionPresentation="method 'GetData'">
             <startOffsets>
-              <option value="666" />
+              <option value="737" />
             </startOffsets>
             <endOffsets>
-              <option value="667" />
+              <option value="818" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

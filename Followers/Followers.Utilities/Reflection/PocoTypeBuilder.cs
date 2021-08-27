@@ -3,21 +3,10 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
 
-namespace GoodsForecast.Useful.Reflection
+namespace Utilities.Reflection
 {
-    /// <summary>
-    /// Билдер типов данных.
-    /// Создает простые POCO типы со свойствами, доступными на чтение и запись.
-    /// </summary>
     public class PocoTypeBuilder
     {
-        /// <summary>
-        /// Создать тип.
-        /// </summary>
-        /// <param name="typeName">Название создаваемого типа.</param>
-        /// <param name="baseType">Базовый тип, от которого наследуется создаваемый тип данных.</param>
-        /// <param name="fields">Словарь полей: название - тип данных.</param>
-        /// <returns>Динамически созданный тип.</returns>
         public Type CreateType(string typeName, Type baseType, IEnumerable<(string FieldName, Type FieldType)> fields)
         {
             if (fields == null) { throw new ArgumentNullException(nameof(fields)); }
@@ -34,13 +23,7 @@ namespace GoodsForecast.Useful.Reflection
             return tb.CreateTypeInfo();
 
         }
-
-        /// <summary>
-        /// Добаавляет свойство к созданному типу данных.
-        /// </summary>
-        /// <param name="tb">TypeBuilder нового типа данных.</param>
-        /// <param name="propertyName">Наименование добаавляемого свойства.</param>
-        /// <param name="propertyType">Тип данных добавляемого свойства.</param>
+        
         private void CreateProperty(TypeBuilder tb, string propertyName, Type propertyType)
         {
             var fieldBuilder = tb.DefineField("_" + propertyName, propertyType, FieldAttributes.Private);
@@ -75,13 +58,7 @@ namespace GoodsForecast.Useful.Reflection
             propertyBuilder.SetGetMethod(getProperyMethodBuilder);
             propertyBuilder.SetSetMethod(setPropertyMethodBuilder);
         }
-
-        /// <summary>
-        /// Создает динамическую сборку и новый тип данных в ней.
-        /// </summary>
-        /// <param name="typeName">Наименование создаваемого типа данных.</param>
-        /// <param name="baseType">Базовый тип, от которого наследуется создаваемый тип данных.</param>
-        /// <returns>Возвращает TypeBuilder для работы с созданным типом данных.</returns>
+        
         private TypeBuilder GetTypeBuilder(string typeName, Type baseType)
         {
             var assemblyName = new AssemblyName(Guid.NewGuid().ToString());

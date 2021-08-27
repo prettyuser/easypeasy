@@ -6,6 +6,7 @@ namespace Followers.Model
     public interface IFollowersDbContext
     {
         public DbSet<EfClient> Clients { get; set; }
-        public DbSet<EfFollower> Followers { get; set; }
+        
+        public DbSet<EfSubscriber> Followers { get; set; }
     }
 }

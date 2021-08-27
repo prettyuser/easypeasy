@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -13,10 +12,10 @@ namespace Followers.Model.Clients.Db.Entities
     /// <param name="IsActive">Is client deleted?</param>
     public record EfClient(int Id, string Name, int? Rank, bool IsActive)
     {
-        [InverseProperty("Following")]
-        public virtual ICollection<EfFollower> Followings { get; set; }
+        [InverseProperty("Subscribing")]
+        public virtual ICollection<EfSubscriber> Subscribings { get; set; }
         
-        [InverseProperty("Follower")]
-        public virtual ICollection<EfFollower> Followers { get; set; }
+        [InverseProperty("Subscriber")]
+        public virtual ICollection<EfSubscriber> Subscribers { get; set; }
     }
 }

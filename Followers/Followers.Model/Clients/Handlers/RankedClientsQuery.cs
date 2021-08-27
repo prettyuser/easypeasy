@@ -1,9 +1,12 @@
 using System.Collections.Generic;
 using Followers.Model.Clients.Dto;
-using GoodsForecast.Mediatr.Extensions.Queries;
+using Utilities.MediatR.Extensions.Queries;
 
 namespace Followers.Model.Clients.Handlers
 { 
-    public record RankedClientsQuery() : Query<IEnumerable<ClientData>>;
-    //QueryableDecorator<EfClient> ApplyOData
+    /// <summary>
+    /// Query to work with clients
+    /// </summary>
+    /// <param name="Top">Take first n elements</param>
+    public record RankedClientsQuery(int Top) : Query<IEnumerable<ClientData>>;
 }

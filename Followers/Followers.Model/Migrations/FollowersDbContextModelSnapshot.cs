@@ -47,51 +47,51 @@ namespace Followers.Model.Migrations
                     b.HasCheckConstraint("CK_Clients_Id", "[Id] > 0");
                 });
 
-            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfFollower", b =>
+            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfSubscriber", b =>
                 {
-                    b.Property<int>("FollowerId")
+                    b.Property<int>("SubscriberId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("FollowingId")
+                    b.Property<int>("SubscribingId")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("FollowerId", "FollowingId");
+                    b.HasKey("SubscriberId", "SubscribingId");
 
-                    b.HasIndex("FollowingId");
+                    b.HasIndex("SubscribingId");
 
-                    b.ToTable("Followers");
+                    b.ToTable("Subscribers");
 
-                    b.HasCheckConstraint("CK_Followers", "[FollowerId] <> [FollowingId]");
+                    b.HasCheckConstraint("CK_Subscribers", "[SubscriberId] <> [SubscribingId]");
 
-                    b.HasCheckConstraint("CK_Followers_FollowerId", "[FollowerId] > 0");
+                    b.HasCheckConstraint("CK_Subscribers_SubscriberId", "[SubscriberId] > 0");
 
-                    b.HasCheckConstraint("CK_Followers_FollowingId", "[FollowingId] > 0");
+                    b.HasCheckConstraint("CK_Subscribers_SubscribingId", "[SubscribingId] > 0");
                 });
 
-            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfFollower", b =>
+            modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfSubscriber", b =>
                 {
-                    b.HasOne("Followers.Model.Clients.Db.Entities.EfClient", "Follower")
-                        .WithMany("Followers")
-                        .HasForeignKey("FollowerId")
+                    b.HasOne("Followers.Model.Clients.Db.Entities.EfClient", "Subscriber")
+                        .WithMany("Subscribers")
+                        .HasForeignKey("SubscriberId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Followers.Model.Clients.Db.Entities.EfClient", "Following")
-                        .WithMany("Followings")
-                        .HasForeignKey("FollowingId")
+                    b.HasOne("Followers.Model.Clients.Db.Entities.EfClient", "Subscribing")
+                        .WithMany("Subscribings")
+                        .HasForeignKey("SubscribingId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Follower");
+                    b.Navigation("Subscriber");
 
-                    b.Navigation("Following");
+                    b.Navigation("Subscribing");
                 });
 
             modelBuilder.Entity("Followers.Model.Clients.Db.Entities.EfClient", b =>
                 {
-                    b.Navigation("Followers");
+                    b.Navigation("Subscribers");
 
-                    b.Navigation("Followings");
+                    b.Navigation("Subscribings");
                 });
 #pragma warning restore 612, 618
         }

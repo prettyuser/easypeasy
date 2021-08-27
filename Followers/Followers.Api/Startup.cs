@@ -1,6 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
@@ -20,16 +19,18 @@ namespace Followers
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            ConfigureControllers(services);
             ConfigureDbContexts(services);
             ConfigureMediatR(services);
-            
-            services.AddSingleton(typeof(IClientsManager), typeof(ClientsManager));
+            ConfigureProjectServices(services);
+            ConfigureControllers(services);
+
+
+            // services.AddSingleton(typeof(IClientsManager), typeof(ClientsManager));
 
             TypeAdapterConfig.GlobalSettings.Default.MapToConstructor(true);
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Followers.Api API", Version = "v1"}); });
@@ -52,10 +53,14 @@ namespace Followers
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.EnableDependencyInjection();
             });
         }
 
+        private void ConfigureProjectServices(IServiceCollection services)
+        {
+            services.AddTransient<IClientsManager, ClientsManager>();
+        }
+        
         private void ConfigureMediatR(IServiceCollection services)
         {
             services.AddMediatR(GetType().Assembly);
@@ -65,7 +70,6 @@ namespace Followers
         private void ConfigureControllers(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddOData();
         }
         
         private void ConfigureDbContexts(IServiceCollection services)

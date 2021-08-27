@@ -1,5 +1,3 @@
-using System;
-
 namespace Followers.Model.Clients.Dto
 {
     /// <summary>
@@ -7,7 +5,7 @@ namespace Followers.Model.Clients.Dto
     /// </summary>
     /// <param name="Id">Client's identifier</param>
     /// <param name="Name">Client's name</param>
-    /// <param name="Rank">Client's rank</param>
+    /// <param name="Followers">Followers quantity</param>
     /// <param name="IsActive">Is deleted></param>
-    public record ClientData(Guid Id, string Name, int Rank, bool IsActive);
+    public record ClientData(int Id, string Name, int Followers, bool IsActive);
 }

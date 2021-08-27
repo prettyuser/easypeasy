@@ -12,7 +12,6 @@ C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Mapster.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Mapster.Core.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\MediatR.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
-C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.AspNetCore.OData.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
@@ -22,11 +21,7 @@ C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.EntityFrame
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
-C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.OData.Core.dll
-C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.OData.Edm.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Microsoft.Spatial.dll
-C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
 C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\SQLitePCLRaw.core.dll
@@ -68,3 +63,4 @@ C:\repo\easypeasy\Followers\Followers.Api\obj\Debug\net5.0\Followers.Api.dll
 C:\repo\easypeasy\Followers\Followers.Api\obj\Debug\net5.0\ref\Followers.Api.dll
 C:\repo\easypeasy\Followers\Followers.Api\obj\Debug\net5.0\Followers.Api.pdb
 C:\repo\easypeasy\Followers\Followers.Api\obj\Debug\net5.0\Followers.Api.genruntimeconfig.cache
+C:\repo\easypeasy\Followers\Followers.Api\bin\Debug\net5.0\Scrutor.dll

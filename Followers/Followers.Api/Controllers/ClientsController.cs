@@ -20,11 +20,17 @@ namespace Followers.Controllers
         
         [HttpGet]
         [Route("[action]")]
-        public async Task<IEnumerable<ClientData>> Get()
+        public async Task<IEnumerable<ClientData>> Get(int top = 0)
         {
-            //ODataQueryOptions<EfClient> queryOptions
-            var query = new RankedClientsQuery();
-            //q => (IQueryable<EfClient>)queryOptions.ApplyTo(q)
+            var query = new RankedClientsQuery(top);
+            return await Mediator.Send(query);
+        }
+        
+        [HttpPatch]
+        [Route("[action]")]
+        public async Task<IEnumerable<ClientData>> Subscribe(int top = 0)
+        {
+            var query = new RankedClientsQuery(top);
             return await Mediator.Send(query);
         }
     }
