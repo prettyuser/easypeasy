@@ -8,10 +8,10 @@ namespace Followers.Model
 {
     public class FollowersDbContext : DbContext, IFollowersDbContext
     {
-        public DbSet<EfClient> Clients { get; set; }
-        public DbSet<EfSubscriber> Subscribers { get; set; }
+        public DbSet<EfClient> Clients { get; }
+        public DbSet<EfSubscriber> Subscribers { get; }
 
-        private string DbPath { get; set; }
+        private string DbPath { get; }
 
         public FollowersDbContext()
         {

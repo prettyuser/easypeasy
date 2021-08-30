@@ -6,9 +6,9 @@ namespace Followers.Model
 {
     public interface IFollowersDbContext
     {
-        public DbSet<EfClient> Clients { get; set; }
+        public DbSet<EfClient> Clients { get; }
         
-        public DbSet<EfSubscriber> Subscribers { get; set; }
+        public DbSet<EfSubscriber> Subscribers { get; }
 
         public Task<int> SaveDbChanges();
     }
