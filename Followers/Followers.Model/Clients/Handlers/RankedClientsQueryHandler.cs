@@ -9,16 +9,16 @@ namespace Followers.Model.Clients.Handlers
 {
     public class RankedClientsQueryHandler : QueryHandler<RankedClientsQuery, IEnumerable<ClientData>>
     {
-        private readonly IClientsManager _clientsManager;
+        private IClientsManager ClientsManager { get; }
         
         public RankedClientsQueryHandler(IClientsManager clientsManager)
         {
-            _clientsManager = clientsManager;
+            ClientsManager = clientsManager;
         }
             
         protected override async Task<IEnumerable<ClientData>> GetData()
         {
-            var result = await _clientsManager.GetClients(Request.Top);
+            var result = await ClientsManager.GetClients(Request.Top);
             return result.Adapt<List<ClientData>>(FollowersMapping.TypeAdapterConfiguration);
         }
     }

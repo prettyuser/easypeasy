@@ -7,7 +7,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="241715e2-456d-4823-9908-18a06b8daab5" name="Default Changelist" comment="" />
+    <list default="true" id="241715e2-456d-4823-9908-18a06b8daab5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ModelBuilderExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources/f409694b-ac9f-40c9-8d14-c46fbec31f2d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources/f409694b-ac9f-40c9-8d14-c46fbec31f2d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Controllers/ClientsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Controllers/ClientsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Followers.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Followers.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/AssemblyRepresentative.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/AssemblyRepresentative.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EFClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EFClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfSubscriber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfSubscriber.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Dto/EditSubscriptionRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Dto/EditSubscriptionRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Dto/RegisterClientRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Dto/RegisterClientRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Dto/SubscriberClientData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/IClientsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/IClientsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ClientsConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ClientsConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/SubscribersConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/SubscribersConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Followers.Model.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Followers.Model.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/FollowersDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/FollowersDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/IFollowersDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/IFollowersDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/MappingConfigs/FollowersMapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/MappingConfigs/FollowersMapping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826230307_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210826230307_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/FollowersDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Async/AsyncWrapper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Async/TaskExtensions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Reflection/CachedPocoTypeFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Reflection/PocoTypeBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Reflection/ReflectionExtensions.cs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,9 +64,16 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29a328843bdc4762af89c8fdc084c4d68f5778/3d/1e8cba6d/KeyNotFoundException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/28afee0751954dfe92c759ffb05573d5d668/d0/2972c760/IJsonPatchDocument.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d7a3ca84869f48e0aa5c354ee22cb1ee1b178/22/7d9e37cf/Logger`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/29b7db275d6b4ef5aa9ffbb397403f9814378/5/ConsoleLoggerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Followers.Api/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3834795bf41b4e628161509eca0f58228200/7e/28e84b6a/ISender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Followers.Api/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/28afee0751954dfe92c759ffb05573d5d668/e5/44e71c15/JsonPatchDocument`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MediatR.Extensions/Class1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eeae490c3300468da793a39c7791ea0213f78/7/LoggerFactory.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -95,11 +141,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="sqlite" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35015577" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34983853" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -153,6 +201,8 @@
       <workItem from="1629921680701" duration="4315000" />
       <workItem from="1629977180377" duration="7032000" />
       <workItem from="1629997509604" duration="25963000" />
+      <workItem from="1630097206277" duration="6631000" />
+      <workItem from="1630245689042" duration="31922000" />
     </task>
     <servers />
   </component>
@@ -182,15 +232,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs</url>
-          <line>45</line>
-          <properties documentPath="C:\repo\easypeasy\Followers\Followers.Model\Clients\ClientsManager.cs" initialLine="45" containingFunctionPresentation="method 'RegisterClient'" />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommandHandler.cs</url>
-          <line>16</line>
-          <properties documentPath="C:\repo\easypeasy\Followers\Followers.Model\Clients\Handlers\RegisterClientCommandHandler.cs" initialLine="16" containingFunctionPresentation="method 'ProcessBase'" />
-          <option name="timeStamp" value="12" />
+          <line>33</line>
+          <properties documentPath="C:\easypeasy\Followers\Followers.Model\Clients\ClientsManager.cs" initialLine="32" containingFunctionPresentation="method 'GetClient'">
+            <startOffsets>
+              <option value="1059" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1060" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

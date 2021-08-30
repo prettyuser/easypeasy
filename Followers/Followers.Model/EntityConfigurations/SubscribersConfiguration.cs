@@ -10,11 +10,11 @@ namespace Followers.Model.EntityConfigurations
         {
             entity.ToTable("Subscribers");
 
-            entity.HasKey(e => new {e.SubscriberId, e.SubscribingId});
+            entity.HasKey(e => new {e.ClientId, e.SubscribingId});
 
-            entity.HasOne(e => e.Subscriber)
-                .WithMany(e => e.Subscribers)
-                .HasForeignKey(e => e.SubscriberId)
+            entity.HasOne(e => e.Client)
+                .WithMany(e => e.Clients)
+                .HasForeignKey(e => e.ClientId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             entity.HasOne(e => e.Subscribing)
@@ -22,12 +22,11 @@ namespace Followers.Model.EntityConfigurations
                 .HasForeignKey(e => e.SubscribingId)
                 .OnDelete(DeleteBehavior.Cascade);
             
-            entity.HasCheckConstraint("CK_Subscribers", 
-                "[SubscriberId] <> [SubscribingId]");
+            entity.HasCheckConstraint("CK_Subscribers_NotSelfReferenceAllowed", "[ClientId] <> [SubscribingId]");
             
-            entity.HasCheckConstraint("CK_Subscribers_SubscriberId", "[SubscriberId] > 0");
+            entity.HasCheckConstraint("CK_Subscribers_Correct_ClientId", "[ClientId] > 0");
             
-            entity.HasCheckConstraint("CK_Subscribers_SubscribingId", "[SubscribingId] > 0");
+            entity.HasCheckConstraint("CK_Subscribers_Correct_SubscribingId", "[SubscribingId] > 0");
         }
     }
 }

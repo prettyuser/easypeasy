@@ -1,15 +1,15 @@
 using System;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Followers.Model.Clients.Db.Entities;
 using Followers.Model.EntityConfigurations;
-using Microsoft.EntityFrameworkCore;
 
 namespace Followers.Model
 {
     public class FollowersDbContext : DbContext, IFollowersDbContext
     {
         public DbSet<EfClient> Clients { get; set; }
-        public DbSet<EfSubscriber> Followers { get; set; }
+        public DbSet<EfSubscriber> Subscribers { get; set; }
 
         private string DbPath { get; set; }
 
@@ -25,9 +25,14 @@ namespace Followers.Model
         {
             modelBuilder.ApplyConfiguration(new ClientsConfiguration());
             modelBuilder.ApplyConfiguration(new SubscribersConfiguration());
+            modelBuilder.Seed();
         }
-        
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite($"Data Source={DbPath}");
+        {
+            base.OnConfiguring(options);
+            options.UseSqlite($"Data Source = {DbPath}; Foreign Keys = True");
+            options.LogTo(Console.WriteLine);
+        }
     }
 }

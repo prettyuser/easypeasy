@@ -3,5 +3,5 @@ using Utilities.MediatR.Extensions.Commands;
 
 namespace Followers.Model.Clients.Handlers
 {
-    public record RegisterClientCommand(RegisterClientRequest registerClientCommand) : Command<ClientData>;
+    public record RegisterClientCommand(RegisterClientRequest RegisterClientRequest) : Command<ClientData>;
 }

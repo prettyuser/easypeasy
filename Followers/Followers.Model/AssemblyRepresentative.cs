@@ -1,7 +1,7 @@
-﻿namespace GoodsForecast.Scheduling.Model.BaseHandlers
+﻿namespace Followers.Model
 {
     /// <summary>
-    /// Служебный мета-класс для удобного доступа к сборке.
+    /// Service meta-class for startup.
     /// </summary>
     public abstract class AssemblyRepresentative { }
 }

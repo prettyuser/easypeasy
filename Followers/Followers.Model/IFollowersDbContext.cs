@@ -8,7 +8,7 @@ namespace Followers.Model
     {
         public DbSet<EfClient> Clients { get; set; }
         
-        public DbSet<EfSubscriber> Followers { get; set; }
+        public DbSet<EfSubscriber> Subscribers { get; set; }
 
         public Task<int> SaveDbChanges();
     }

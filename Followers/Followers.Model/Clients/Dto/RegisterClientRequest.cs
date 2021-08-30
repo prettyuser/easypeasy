@@ -1,4 +1,4 @@
 namespace Followers.Model.Clients.Dto
 {
-    public record RegisterClientRequest(string ClientName);
+    public record RegisterClientRequest(string Name);
 }

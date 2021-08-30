@@ -1,12 +1,14 @@
 using System.Threading.Tasks;
 using Followers.Model.Clients.Dto;
+using Followers.Model.MappingConfigs;
+using Mapster;
 using Utilities.MediatR.Extensions.Commands;
 
 namespace Followers.Model.Clients.Handlers
 {
     public class RegisterClientCommandHandler : CommandHandler<RegisterClientCommand, ClientData>
     {
-        private IClientsManager ClientsManager { get; set; }
+        private IClientsManager ClientsManager { get; }
         
         public RegisterClientCommandHandler(IClientsManager clientsManager)
         {
@@ -15,7 +17,8 @@ namespace Followers.Model.Clients.Handlers
         
         protected override async Task<ClientData> ProcessBase()
         {
-            return await ClientsManager.RegisterClient(Request.registerClientCommand.ClientName);
+            var result = await ClientsManager.RegisterClient(Request.RegisterClientRequest.Name);
+            return result.Adapt<ClientData>(FollowersMapping.TypeAdapterConfiguration);
         }
     }
 }

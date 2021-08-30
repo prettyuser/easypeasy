@@ -15,7 +15,7 @@ namespace Followers.Model.Clients.Db.Entities
         [InverseProperty("Subscribing")]
         public virtual ICollection<EfSubscriber> Subscribings { get; set; }
         
-        [InverseProperty("Subscriber")]
-        public virtual ICollection<EfSubscriber> Subscribers { get; set; }
+        [InverseProperty("Client")]
+        public virtual ICollection<EfSubscriber> Clients { get; set; }
     }
 }

@@ -1,32 +1,27 @@
 using System.Threading.Tasks;
 using Followers.Model.Clients.Dto;
+using Followers.Model.MappingConfigs;
+using Mapster;
 using Utilities.MediatR.Extensions.Commands;
 
 namespace Followers.Model.Clients.Handlers
 {
-    public class SubscribeClientCommandHandler : CommandHandler<SubscribeClientCommand, SubscriberClientData>
+    public class SubscribeClientCommandHandler : CommandHandler<SubscribeClientCommand, ClientData>
     {
-        private IClientsManager ClientsManager { get; set; }
+        private IClientsManager ClientsManager { get; }
         
         public SubscribeClientCommandHandler(IClientsManager clientsManager)
         {
             ClientsManager = clientsManager;
         }
 
-        protected override async Task<SubscriberClientData> ProcessBase()
+        protected override async Task<ClientData> ProcessBase()
         {
-            var processed = await ClientsManager.SubscribeClient(
-                Request.EditSubscriptionRequest.SubscriberId,
-                Request.EditSubscriptionRequest.SubscribingId);
+            var result = await ClientsManager.SubscribeClient(
+                Request.Id,
+                Request.Request.SubscribingId);
 
-            if (processed > 0) 
-            {
-                return new SubscriberClientData(
-                    Request.EditSubscriptionRequest.SubscribingId, 
-                    Request.EditSubscriptionRequest.SubscriberId);
-            }
-
-            return new SubscriberClientData(0, 0);
+            return result.Adapt<ClientData>(FollowersMapping.TypeAdapterConfiguration);
         }
     }
 }

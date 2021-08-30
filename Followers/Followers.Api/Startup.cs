@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using GoodsForecast.Scheduling.Model.BaseHandlers;
 using Followers.Model.Clients;
 using Followers.Model;
 using Mapster;
@@ -28,9 +27,6 @@ namespace Followers
             ConfigureMediatR(services);
             ConfigureProjectServices(services);
             ConfigureControllers(services);
-
-
-            // services.AddSingleton(typeof(IClientsManager), typeof(ClientsManager));
 
             TypeAdapterConfig.GlobalSettings.Default.MapToConstructor(true);
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Followers.Api API", Version = "v1"}); });
@@ -69,7 +65,7 @@ namespace Followers
         
         private void ConfigureControllers(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
         }
         
         private void ConfigureDbContexts(IServiceCollection services)

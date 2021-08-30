@@ -23,7 +23,8 @@ namespace Followers.Model.EntityConfigurations
             entity.HasIndex(e => e.Id)
                 .IsUnique();
 
-            entity.HasIndex(e => e.Name);
+            entity.HasIndex(e => e.Name)
+                .IsUnique();
             
             entity.HasCheckConstraint("CK_Clients_Id", "[Id] > 0");
         }

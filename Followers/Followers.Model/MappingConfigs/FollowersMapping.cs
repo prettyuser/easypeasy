@@ -13,7 +13,7 @@ namespace Followers.Model.MappingConfigs
             var config = new TypeAdapterConfig();
             
             config.NewConfig<EfClient, ClientData>()
-                .Map(e => e.Followers, src => src.Subscribers.Count);
+                .Map(e => e.Followers, src => src.Subscribings.Count);
             
             return config;
         }
