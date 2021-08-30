@@ -1,15 +1,18 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Followers.Model.Clients.Db.Entities;
 using Followers.Model.EntityConfigurations;
+using Utilities.DataModels;
 
 namespace Followers.Model
 {
     public class FollowersDbContext : DbContext, IFollowersDbContext
     {
-        public DbSet<EfClient> Clients { get; }
-        public DbSet<EfSubscriber> Subscribers { get; }
+        public DbSet<EfClient> Clients { get; private set; } = default!;
+        
+        public DbSet<EfSubscriber> Subscribers { get; private set; } = default!;
 
         private string DbPath { get; }
 
@@ -19,7 +22,24 @@ namespace Followers.Model
             DbPath = $"{path}{System.IO.Path.DirectorySeparatorChar}followers.db";
         }
 
-        public Task<int> SaveDbChanges() => SaveChangesAsync();
+        public async Task<int> SaveDbChanges()
+        {
+            var entries = ChangeTracker
+                .Entries()
+                .Where(e => e.Entity is BaseEfEntity && e.State is EntityState.Added or EntityState.Modified);
+
+            foreach (var entityEntry in entries)
+            {
+                ((BaseEfEntity)entityEntry.Entity).LastModifiedOn = DateTime.Now;
+
+                if (entityEntry.State == EntityState.Added)
+                {
+                    ((BaseEfEntity)entityEntry.Entity).CreatedOn = DateTime.Now;
+                }
+            }
+            
+            return await SaveChangesAsync();
+        } 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

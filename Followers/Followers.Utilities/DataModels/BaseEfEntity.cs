@@ -2,5 +2,9 @@ using System;
 
 namespace Utilities.DataModels
 {
-    public record BaseEfEntity(DateTime? CreatedOn, DateTime? LastModifiedOn);
+    public record BaseEfEntity()
+    {
+        public DateTime? CreatedOn { get; set; }
+        public DateTime? LastModifiedOn { get; set; }
+    }
 }

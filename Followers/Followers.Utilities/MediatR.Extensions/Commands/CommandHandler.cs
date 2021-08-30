@@ -1,31 +1,30 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using MediatR;
+using FluentValidation;
+using Microsoft.Extensions.Logging;
 using Utilities.MediatR.Extensions.Base;
+using Utilities.MediatR.Extensions.Exceptions;
+using Utilities.MediatR.Extensions.Rules;
 
 namespace Utilities.MediatR.Extensions.Commands
 {
     public abstract class CommandHandler<TCommand, TResult> : HandlerBase<TCommand, TResult>
         where TCommand : ICommand<TResult>
     {
-        protected TCommand Command => Request;
+        protected CommandHandler(ILogger logger, IRequestRuleProvider ruleProvider) : base(logger, ruleProvider)
+        { }
+
+        private TCommand Command => Request;
         
+        protected override IEnumerable<ValidationError> Validate() => Validator.ValidateRequest(Command);
+        
+        protected virtual InlineValidator<TCommand> Validator => new InlineValidator<TCommand>();
+
         protected override async Task<TResult> Handle()
         {
             return await ProcessBase().ConfigureAwait(false);
         }
         
         protected abstract Task<TResult> ProcessBase();
-    }
-    
-    public abstract class CommandHandler<TCommand> : CommandHandler<TCommand, Unit>
-        where TCommand : ICommand
-    {
-        protected override async Task<Unit> ProcessBase()
-        {
-            await Process().ConfigureAwait(false);
-            return Unit.Value;
-        }
-        
-        protected abstract Task Process();
     }
 }

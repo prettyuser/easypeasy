@@ -1,8 +1,10 @@
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 using Followers.Model.Clients.Dto;
 using Followers.Model.MappingConfigs;
 using Mapster;
 using Utilities.MediatR.Extensions.Commands;
+using Utilities.MediatR.Extensions.Rules;
 
 namespace Followers.Model.Clients.Handlers
 {
@@ -10,7 +12,10 @@ namespace Followers.Model.Clients.Handlers
     {
         private IClientsManager ClientsManager { get; }
         
-        public SubscribeClientCommandHandler(IClientsManager clientsManager)
+        public SubscribeClientCommandHandler(
+            ILogger<SubscribeClientCommandHandler> logger,  
+            IRequestRuleProvider ruleProvider,
+            IClientsManager clientsManager) : base(logger, ruleProvider)
         {
             ClientsManager = clientsManager;
         }

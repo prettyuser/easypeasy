@@ -8,6 +8,7 @@ using Followers.Model.Clients;
 using Followers.Model;
 using Mapster;
 using MediatR;
+using Utilities.MediatR.Extensions.Rules;
 
 namespace Followers
 {
@@ -23,6 +24,7 @@ namespace Followers
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            ConfigureRequestRules(services);
             ConfigureDbContexts(services);
             ConfigureMediatR(services);
             ConfigureProjectServices(services);
@@ -71,6 +73,11 @@ namespace Followers
         private void ConfigureDbContexts(IServiceCollection services)
         {
             services.AddDbContext<IFollowersDbContext, FollowersDbContext>();
+        }
+        
+        private static void ConfigureRequestRules(IServiceCollection services)
+        {
+            services.AddScoped(typeof(IRequestRuleProvider), typeof(RequestRuleProvider));
         }
     }
 }

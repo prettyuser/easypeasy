@@ -1,3 +1,5 @@
+using Utilities.DataModels;
+
 namespace Followers.Model.Clients.Db.Entities
 {
     /// <summary>
@@ -5,7 +7,7 @@ namespace Followers.Model.Clients.Db.Entities
     /// </summary>
     /// <param name="ClientId">Client's Id</param>
     /// <param name="SubscribingId">Following Id</param>
-    public record EfSubscriber(int ClientId, int SubscribingId)
+    public record EfSubscriber(int ClientId, int SubscribingId) : BaseEfEntity
     {
         public virtual EfClient Client { get; set; }
         

@@ -4,6 +4,8 @@ using Mapster;
 using Utilities.MediatR.Extensions.Queries;
 using Followers.Model.MappingConfigs;
 using Followers.Model.Clients.Dto;
+using Microsoft.Extensions.Logging;
+using Utilities.MediatR.Extensions.Rules;
 
 namespace Followers.Model.Clients.Handlers
 {
@@ -11,7 +13,10 @@ namespace Followers.Model.Clients.Handlers
     {
         private IClientsManager ClientsManager { get; }
         
-        public RankedClientsQueryHandler(IClientsManager clientsManager)
+        public RankedClientsQueryHandler(
+            ILogger<RankedClientsQueryHandler> logger, 
+            IRequestRuleProvider ruleProvider,
+            IClientsManager clientsManager) : base(logger, ruleProvider)
         {
             ClientsManager = clientsManager;
         }
