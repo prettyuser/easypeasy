@@ -15,8 +15,8 @@ namespace Followers.Model.Clients
         
         public ClientsManager(IFollowersDbContext followersDbContext, ILogger<ClientsManager> logger)
         {
-            _logger = logger;
             _followersDbContext = followersDbContext;
+            _logger = logger;
         }
 
         public async Task<List<EfClient>> GetClients(int top)

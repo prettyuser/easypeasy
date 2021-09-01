@@ -1,5 +1,6 @@
-using Followers.Model.Clients.Db.Entities;
+using System;
 using Microsoft.EntityFrameworkCore;
+using Followers.Model.Clients.Db.Entities;
 
 namespace Followers.Model.EntityConfigurations
 {

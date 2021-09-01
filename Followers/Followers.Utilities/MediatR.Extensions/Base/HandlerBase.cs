@@ -13,22 +13,24 @@ namespace Utilities.MediatR.Extensions.Base
     public abstract class HandlerBase<TRequest, TResponse> : IRequestHandler<TRequest, TResponse>
         where TRequest : IRequestBase, IRequest<TResponse>
     {
-        public HandlerBase(ILogger logger, IRequestRuleProvider ruleProvider)
+        private readonly ILogger _logger;
+
+        private readonly IRequestRuleProvider _ruleProvider;
+
+        protected HandlerBase(ILogger logger, IRequestRuleProvider ruleProvider)
         {
-            RuleProvider = ruleProvider;
-            Logger = logger;
+            _ruleProvider = ruleProvider;
+            _logger = logger;
         }
         
-        protected readonly ILogger Logger;
-        
-        protected readonly IRequestRuleProvider RuleProvider;
+        private ICollection<IRequestRule> Rules { get; set; }
 
-        protected TRequest Request;
-        
-        protected ICollection<IRequestRule> Rules;
-        
+        protected TRequest Request { get; private set; }
+
         protected abstract Task<TResponse> Handle();
-        
+
+        protected virtual IEnumerable<ValidationError> Validate() => new List<ValidationError>(0);
+
         public async Task<TResponse> Handle(TRequest request, CancellationToken _)
         {
             TResponse result;
@@ -36,7 +38,7 @@ namespace Utilities.MediatR.Extensions.Base
 
             try
             {
-                Rules = RuleProvider.Get<TRequest>();
+                Rules = _ruleProvider.Get<TRequest>();
                 
                 ValidateBase();
                 result = await Handle();
@@ -48,7 +50,14 @@ namespace Utilities.MediatR.Extensions.Base
 
             return result;
         }
+        
+        private Task<Exception> ProcessError(Exception exception)
+        {
+            _logger.LogError(exception, $"Error during processing request [{Request}]");
 
+            return Task.FromResult(exception);
+        }
+        
         private void ValidateBase()
         {
             var errors = new List<ValidationError>();
@@ -62,15 +71,6 @@ namespace Utilities.MediatR.Extensions.Base
                 throw new RequestValidationException(errors);
         }
         
-        protected virtual IEnumerable<ValidationError> Validate() => new List<ValidationError>(0);
-
         public override string ToString() => $"{GetType().Name} | {Request}";
-        
-        private Task<Exception> ProcessError(Exception exception)
-        {
-            Logger.LogError(exception, $"Error during processing request [{Request}]");
-
-            return Task.FromResult(exception);
-        }
     }
 }

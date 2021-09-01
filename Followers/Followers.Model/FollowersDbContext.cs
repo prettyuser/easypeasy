@@ -16,7 +16,7 @@ namespace Followers.Model
 
         private string DbPath { get; }
 
-        public FollowersDbContext()
+        public FollowersDbContext(DbContextOptionsBuilder builder = null, bool test = false)
         {
             var path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
             DbPath = $"{path}{System.IO.Path.DirectorySeparatorChar}followers.db";

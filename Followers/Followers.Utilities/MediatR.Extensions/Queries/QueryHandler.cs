@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using FluentValidation;
 using Microsoft.Extensions.Logging;
+using FluentValidation;
 using Utilities.MediatR.Extensions.Base;
 using Utilities.MediatR.Extensions.Exceptions;
 using Utilities.MediatR.Extensions.Rules;
@@ -13,7 +13,7 @@ namespace Utilities.MediatR.Extensions.Queries
     {
         private TQuery Query => Request;
         
-        protected virtual InlineValidator<TQuery> Validator => new InlineValidator<TQuery>();
+        protected virtual InlineValidator<TQuery> Validator => new();
         
         protected override async Task<TResult> Handle() => await GetData();
 

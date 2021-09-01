@@ -10,20 +10,11 @@ namespace Utilities.MediatR.Extensions.Exceptions
             PropertyName = propertyName;
             AttemptedValue = value;
         }
-
-        /// <summary>
-        /// Сообщение об ошибке валидации.
-        /// </summary>
+        
         public string ErrorMessage { get; set; }
 
-        /// <summary>
-        /// Название свойства, непрошедшего валидацию.
-        /// </summary>
         public string PropertyName { get; set; }
 
-        /// <summary>
-        /// Невалидное значение свойства.
-        /// </summary>
         public object AttemptedValue { get; set; }
 
         public override string ToString()

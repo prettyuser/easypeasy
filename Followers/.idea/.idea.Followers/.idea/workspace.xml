@@ -8,33 +8,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="241715e2-456d-4823-9908-18a06b8daab5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/RequestRuleNotFoundException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/RequestValidationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/ValidationError.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/ValidatorExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/IRequestRule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/IRequestRuleProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/IRequestWithRule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/RequestRule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/RequestRuleProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Followers.Utilities/Reflection/ReflectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources/f409694b-ac9f-40c9-8d14-c46fbec31f2d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/dataSources/f409694b-ac9f-40c9-8d14-c46fbec31f2d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Followers/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Api/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/ClientsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EFClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EFClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfSubscriber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Db/Entities/EfSubscriber.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RankedClientsQueryHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Clients/Handlers/SubscribeClientCommandHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ClientsConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ClientsConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ModelBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/ModelBuilderExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/SubscribersConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/EntityConfigurations/SubscribersConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Model/FollowersDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/FollowersDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/FollowersDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Model/Migrations/FollowersDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Utilities/DataModels/BaseEfEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/DataModels/BaseEfEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Db/QueryableDecorator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Followers.Utilities.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/Followers.Utilities.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210829170239_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210829170239_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210830151224_Migration002.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210830151224_Migration002.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210830151426_Migration003.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/20210830151426_Migration003.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Model/Migrations/FollowersDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Unit.Tests/Followers.Unit.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Unit.Tests/Followers.Unit.Tests.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/HandlerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/HandlerBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/Command.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/CommandHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/CommandHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/ICommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Commands/ICommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/RequestRuleNotFoundException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/RequestRuleNotFoundException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/RequestValidationException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/RequestValidationException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/ValidationError.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/ValidationError.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/ValidatorExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/ValidatorExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/Query.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/QueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Queries/QueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/IRequestWithRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/IRequestWithRule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/RequestRuleProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Rules/RequestRuleProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Followers.Utilities/Reflection/ReflectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Followers.Utilities/Reflection/ReflectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MediatR.Extensions/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MediatR.Extensions/MediatR.Extensions.csproj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +65,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d69adf05f5694602b3e6902c009bb1aa2ad78/25/Validator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/28afee0751954dfe92c759ffb05573d5d668/e5/44e71c15/JsonPatchDocument`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0d57fc0637b446a9be265d0f4aabc4e86b800/9/InlineValidator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/MediatR.Extensions/Class1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/28afee0751954dfe92c759ffb05573d5d668/d0/2972c760/IJsonPatchDocument.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e7bd73da3c6440fbb258d36855a3f9401bfb78/9f/3db69758/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e7bd73da3c6440fbb258d36855a3f9401bfb78/38/069830a6/EntityTypeBuilder`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d7a3ca84869f48e0aa5c354ee22cb1ee1b178/22/7d9e37cf/Logger`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3834795bf41b4e628161509eca0f58228200/7e/28e84b6a/ISender.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0d57fc0637b446a9be265d0f4aabc4e86b800/1/AbstractValidator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eeae490c3300468da793a39c7791ea0213f78/7/LoggerFactory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29a328843bdc4762af89c8fdc084c4d68f5778/f9/852e54b1/Type.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -197,7 +202,11 @@
       <workItem from="1629997509604" duration="25963000" />
       <workItem from="1630097206277" duration="6631000" />
       <workItem from="1630245689042" duration="31922000" />
-      <workItem from="1630326913912" duration="10963000" />
+      <workItem from="1630326913912" duration="11291000" />
+      <workItem from="1630353757143" duration="18110000" />
+      <workItem from="1630475505484" duration="632000" />
+      <workItem from="1630476178311" duration="1353000" />
+      <workItem from="1630477558245" duration="1245000" />
     </task>
     <servers />
   </component>
@@ -226,30 +235,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Followers.Model/Clients/Handlers/RegisterClientCommand.cs</url>
-          <line>11</line>
-          <properties documentPath="C:\easypeasy\Followers\Followers.Model\Clients\Handlers\RegisterClientCommand.cs" initialLine="12" containingFunctionPresentation="method 'Validate'">
+          <url>file://$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Exceptions/ValidatorExtensions.cs</url>
+          <line>14</line>
+          <properties documentPath="C:\easypeasy\Followers\Followers.Utilities\MediatR.Extensions\Exceptions\ValidatorExtensions.cs" initialLine="14" containingFunctionPresentation="method 'ValidateRequest'">
             <startOffsets>
-              <option value="444" />
+              <option value="443" />
             </startOffsets>
             <endOffsets>
-              <option value="445" />
+              <option value="491" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Followers.Utilities/MediatR.Extensions/Base/HandlerBase.cs</url>
-          <line>55</line>
-          <properties documentPath="C:\easypeasy\Followers\Followers.Utilities\MediatR.Extensions\Base\HandlerBase.cs" initialLine="55" containingFunctionPresentation="method 'ValidateBase'">
-            <startOffsets>
-              <option value="1532" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1559" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

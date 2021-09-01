@@ -9,9 +9,8 @@ namespace Followers.Model.Clients.Db.Entities
     /// </summary>
     /// <param name="Id">Client's identifier</param>
     /// <param name="Name">Client's name</param>
-    /// <param name="Rank">Client's rank</param>
     /// <param name="IsActive">Is client deleted?</param>
-    public record EfClient(int Id, string Name, int? Rank = null, bool IsActive = true) : BaseEfEntity
+    public record EfClient(int Id, string Name, bool IsActive = true) : BaseEfEntity
     {
         [InverseProperty("Subscribing")]
         public virtual ICollection<EfSubscriber> Subscribings { get; set; }

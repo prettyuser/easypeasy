@@ -2,5 +2,5 @@
 
 namespace Utilities.MediatR.Extensions.Queries
 {
-    public record Query<TResult> : IRequestBase, IQuery<TResult>;
+    public record Query<TResult> : IQuery<TResult>;
 }
